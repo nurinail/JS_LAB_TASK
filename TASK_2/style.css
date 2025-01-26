@@ -1,0 +1,167 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+button {
+  border: none;
+  background: transparent;
+  font-size: 24px;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    background-image: url("images/HD-wallpaper-man-hike-camping-forest-trees-nature-thumbnail.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+  }
+  .container_header {
+    position: relative;
+  }
+  .container_header_main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* display: none; */
+    padding: 10px;
+  }
+
+  .container_header_logo {
+    font-size: 28px;
+  }
+  .container_header_icons {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+  .container_header_icons_item {
+    font-size: 24px;
+    color: black;
+  }
+
+  .container_header_ul {
+    background-color: white;
+  }
+  /* -------------------------------------- */
+
+  .container_header_after_click {
+    display: none;
+  }
+
+  .active {
+    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: white;
+    width: 250px;
+    height: 100vh;
+    padding: 10px;
+    position: absolute;
+    top: 0;
+    animation: slideIn 0.3s ease-in;
+  }
+  @keyframes slideIn {
+    0% {
+      left: -100%;
+    }
+    100% {
+      left: 0;
+    }
+  }
+  .container_header_after_click_top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding-block: 10px;
+    /* border: 1px solid red; */
+  }
+  .container_header_after_click_top_closeBtn {
+    cursor: pointer;
+  }
+
+  .container_header_after_click_form {
+    width: 100%;
+    position: relative;
+    /* border: 1px solid red; */
+  }
+  .container_header_after_click_form_input {
+    padding: 6px 6px;
+    width: 100%;
+  }
+
+  .search_icon {
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: translate(-50%, 50%);
+  }
+
+  .container_header_after_click_ul {
+    width: 100%;
+  }
+  .container_header_after_click_ul_item {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+  }
+  .container_header_after_click_ul_item:last-child {
+    border: none;
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+  }
+  .wishlish_icons_heart {
+    font-size: 20px;
+    margin-right: 10px;
+  }
+  .wishlish_icons_number {
+    font-size: 14px;
+    position: absolute;
+    right: 0;
+    bottom: 20px;
+  }
+  .container_header_after_click_ul_item_link {
+    display: inline-block;
+    padding: 12px 0 4px 0;
+    color: black;
+    font-size: 22px;
+  }
+
+  /* ----------------main started-------------- */
+
+  .container_main_banner {
+    display: flex;
+    flex-direction: column;
+    margin-inline: auto;
+    text-align: center;
+    justify-content: center;
+    gap: 10px;
+    width: 80%;
+    margin-top: 60px;
+    padding-top: 50px;
+    color: white;
+    align-items: center;
+  }
+  .container_main_banner_title {
+    font-size: 28px;
+  }
+  .container_main_banner_btn {
+    margin-top: 20px;
+    background-color: white;
+    padding: 14px 20px;
+    font-size: 20px;
+    font-weight: 600;
+  }
+}
