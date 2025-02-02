@@ -28,12 +28,12 @@ productsArr.map(
 );
 
 let productItem = document.querySelectorAll(".main_products_item");
+let shopNumber = 0;
 productItem.forEach((e) => {
   let shopAccount = document.querySelector(".header_nav_menu_shops_number");
-  let dataId=Number(e.getAttribute("data-product-id"));
+  // let dataId=Number(e.getAttribute("data-product-id"));
+  // let isExist=addProducts.find(event=>event.id===dataId);
   let shopBtn = e.children[1].children[1].children[0];
-  let shopNumber = 0;
-  let isExist=addProducts.find(event=>event.id===dataId);
   shopBtn.addEventListener("click", (even) => {
     even.preventDefault();
     shopNumber += 1;
