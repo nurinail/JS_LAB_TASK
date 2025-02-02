@@ -1,0 +1,166 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+}
+
+.container {
+  padding: 10px 20px;
+  width: 80%;
+  margin-inline: auto;
+  .header {
+    .header_nav {
+      display: grid;
+      grid-template-columns: 2fr 5fr 3fr;
+      align-items: center;
+
+      .header_nav_logo {
+        .header_nav_logo_link {
+          color: black;
+          font-size: 40px;
+        }
+      }
+      .header_nav_form {
+        // border: 1px solid red;
+        position: relative;
+        background-color: #f3f3f3;
+        border-radius: 10px;
+        margin-right: 80px;
+        .header_nav_form_input {
+          border: none;
+          width: 100%;
+          background-color: transparent;
+          padding: 14px 20px;
+        }
+        .header_nav_form_input:focus {
+          outline: 1px solid #f27a1a;
+          border-radius: 10px;
+        }
+        .header_nav_form_searchbtn {
+          position: absolute;
+          right: 0;
+          top: 50%;
+          color: #f27a1a;
+          font-size: 22px;
+          transform: translate(-50%, -50%);
+        }
+      }
+      .header_nav_menu {
+        // border: 1px solid black;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 40px;
+        .header_nav_menu_item {
+          color: #333333;
+          font-weight: bold;
+          display: flex;
+          align-items: center;
+          gap: 6px;
+          font-size: 16px;
+        }
+        .header_nav_menu_shops {
+          position: relative;
+          .header_nav_menu_shops_number {
+            position: absolute;
+            left: 20px;
+            top: -10px;
+            // transform: translate(100%, -60%);
+            color: #f27a1a;
+          }
+        }
+      }
+    }
+  }
+  .main {
+    margin-top: 20px;
+    .main_products {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+        width: 100%;
+        // border: 1px solid black;
+        .main_products_item{
+            background-color: aliceblue;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+            width: 300px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            padding-inline: 20px;
+            padding-block: 10px;
+            position: relative;
+            
+            .main_products_item_img{
+                // border: 1px solid black;
+                width: 250px;
+                height: 300px;
+                object-fit: cover;
+                // align-self: center;
+                text-align: center;
+            }
+            .main_products_item_bottom{
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                // width: 25%;
+                .main_products_item_bottom_name{
+                    // width: 100px;
+                    // border: 1px solid red;
+                    height: 40px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    text-align: center;
+                }
+                .main_products_item_bottom_price{
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    font-size: 24px;
+                    .main_products_item_bottom_price_shopBtn{
+                        font-size: 24px;
+                        color: #f27a1a;
+                    }
+                }
+            }
+            .main_products_item_heartIcon{
+              position: absolute;
+              width: 40px;
+              height: 40px;
+              background-color: white;
+              border-radius: 50%;
+              top: 0;
+              right: 0;
+              transform: translate(-80%,30%);
+              cursor: pointer;
+              i{
+                font-size: 20px;
+                color: #000000;
+              }
+              .fa-solid{
+                color: #f27a1a;
+              }
+
+            }
+        }
+
+    }
+  }
+}
