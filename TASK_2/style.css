@@ -12,7 +12,7 @@ a {
 }
 button {
   border: none;
-  background: transparent;
+  background: transparent; 
   font-size: 24px;
 }
 
@@ -121,6 +121,7 @@ button {
     align-items: center;
     justify-content: space-between;
     position: relative;
+    border: 1px solid red;
   }
   .wishlish_icons_heart {
     font-size: 20px;
@@ -131,6 +132,7 @@ button {
     position: absolute;
     right: 0;
     bottom: 20px;
+    border: 1PX solid red;
   }
   .container_header_after_click_ul_item_link {
     display: inline-block;

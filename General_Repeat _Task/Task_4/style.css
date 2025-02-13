@@ -1,0 +1,168 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  border: 1px solid white;
+  background-color: #0C0C0D;
+  border-radius: 40px;
+  margin-inline: auto;
+  padding: 30px 20px;
+}
+.container .header {
+  border: 1px solid #3D424A;
+  color: white;
+  border-radius: 40px;
+  background-color: #040C17;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 100px;
+  padding-inline: 20px;
+  padding-block: 30px;
+}
+.container .header .header_left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+.container .header .header_left .header_left_title {
+  font-size: 34px;
+}
+.container .header .header_left .header_left_date {
+  font-weight: bold;
+  font-size: 24px;
+}
+.container .header .header_rightCircle {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container .header .header_rightCircle .container_header_rightCircle_span {
+  color: black;
+  font-size: 36px;
+  font-weight: bold;
+}
+.container .main {
+  padding-block: 30px;
+}
+.container .main .add_section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 30px;
+}
+.container .main .add_section .add_section_form {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+.container .main .add_section .add_section_form .add_section_form_input {
+  width: 90%;
+  background-color: #111112;
+  padding: 13px 8px;
+  border: none;
+  outline: 1px solid #3D424A;
+  border-radius: 10px;
+}
+.container .main .add_section .add_section_form .add_section_form_input:focus {
+  color: white;
+}
+.container .main .add_section .add_section_form .add_section_form_button {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  cursor: pointer;
+}
+.container .main .add_section .add_section_lista {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  color: white;
+}
+.container .main .add_section .add_section_lista .add_section_lista_title {
+  color: #535354;
+  font-size: 14px;
+}
+.container .main .add_section .add_section_lista .add_section_lista_ul {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 10px;
+}
+.container .main .add_section .add_section_lista .add_section_lista_ul .add_section_lista_ul_item {
+  height: 50px;
+  border: 1px solid #252529;
+  background-color: #171719;
+  width: 100%;
+  border-radius: 20px;
+  padding: 10px 14px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+.container .main .add_section .add_section_lista .add_section_lista_ul .add_section_lista_ul_item .add_section_lisl_item_text {
+  font-size: 18px;
+  background-color: transparent;
+  border: none;
+  color: white;
+  width: 80%;
+}
+.container .main .add_section .add_section_lista .add_section_lista_ul .add_section_lista_ul_item .add_section_lisl_item_text:focus {
+  outline: none;
+}
+.container .main .add_section .add_section_lista .add_section_lista_ul .add_section_lista_ul_item .add_section_lista_ul_item_button {
+  font-size: 18px;
+  cursor: pointer;
+}
+.container .main .add_section .add_section_lista .add_section_lista_ul .add_section_lista_ul_item .add_section_lista_ul_item_popap {
+  position: absolute;
+  right: 0;
+  top: 0;
+  transform: translate(100%, -40%);
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.container .main .add_section .add_section_lista .add_section_lista_ul .add_section_lista_ul_item .add_section_lista_ul_item_popap .add_section_lista_ul_item_popap_btn {
+  padding: 2px 2px;
+  cursor: pointer;
+  color: white;
+  background-color: red;
+  border: none;
+  border-radius: 6px;
+}
+.container .main .add_section .add_section_lista .add_section_lista_ul .add_section_lista_ul_item .add_section_lista_ul_item_popap .add_section_lista_ul_item_popap_btn:last-child {
+  background-color: green;
+}
+.container .main .add_section .add_section_lista .add_section_lista_ul .add_section_lista_ul_item .activee {
+  display: none;
+}/*# sourceMappingURL=style.css.map */

@@ -9,5 +9,5 @@ btnClick.forEach((item) => {
     } else {
       item.children[0].classList.replace("fa-chevron-up", "fa-chevron-down");
     }
-  });
+  }); 
 });
