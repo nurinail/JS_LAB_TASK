@@ -1,0 +1,172 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  background-color: black;
+  color: white;
+}
+
+.main {
+  margin-top: 10rem;
+  width: 50%;
+  text-align: center;
+  gap: 2rem;
+  position: relative;
+  position: absolute;
+  left: 50%;
+  top: 30%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-inline: auto;
+}
+.main .parent {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+}
+.main .parent .parentTitle {
+  font-size: 4rem;
+}
+.main .parent .parentQuestion {
+  font-size: 2.8rem;
+}
+.main .form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 3rem;
+}
+.main .form .formInput {
+  padding: 2rem;
+  width: 100%;
+  text-align: center;
+  border: none;
+  border-radius: 0.6rem;
+  font-size: 1.6rem;
+}
+.main .form .formInput:focus {
+  outline: none;
+  text-align: center;
+}
+.main .form .formInput::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.main .form .formBtn {
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+.main .bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.main .bottom .lastNumbers {
+  font-size: 2.5rem;
+}
+.main .nonActive {
+  display: none;
+}
+.main .newGame {
+  padding: 2rem;
+  width: 80%;
+  min-height: 35rem;
+  border-radius: 5rem;
+  -webkit-backdrop-filter: blur(4rem);
+          backdrop-filter: blur(4rem);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  gap: 1rem;
+  color: rgb(0, 255, 0);
+}
+.main .newGame .newGameTitle {
+  font-size: 5rem;
+}
+.main .newGame .newGameBtn {
+  padding: 1rem 3rem;
+  border-radius: 0.9rem;
+  border: none;
+  cursor: pointer;
+  font-size: 2rem;
+  animation: 0.7s infinite alternate scalex;
+  background-color: rgb(153, 255, 0);
+  color: white;
+}
+@keyframes scalex {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}
+.main .winner {
+  padding: 2rem;
+  width: 80%;
+  min-height: 35rem;
+  border-radius: 5rem;
+  -webkit-backdrop-filter: blur(4rem);
+          backdrop-filter: blur(4rem);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  gap: 1rem;
+  color: rgb(0, 255, 0);
+}
+.main .winner .winnerTitle {
+  font-size: 5rem;
+}
+.main .winner .winnerBtn {
+  padding: 1rem 3rem;
+  border-radius: 0.9rem;
+  border: none;
+  cursor: pointer;
+  font-size: 2rem;
+  animation: 0.7s infinite alternate scalex;
+  background-color: rgb(153, 255, 0);
+  color: white;
+}
+@keyframes scalex {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}
+
+@media screen and (max-width: 762px) {
+  html {
+    font-size: 0.5rem;
+  }
+  .main {
+    width: 90%;
+  }
+}/*# sourceMappingURL=style.css.map */
