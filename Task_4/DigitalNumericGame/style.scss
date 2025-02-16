@@ -90,7 +90,7 @@ body {
       font-size: 2.5rem;
     }
   }
-  .nonActive{
+  .nonActive {
     display: none;
   }
   .newGame {
@@ -111,6 +111,7 @@ body {
     color: rgb(0, 255, 0);
     // display: none;
     .newGameTitle {
+      color: red;
       font-size: 5rem;
     }
     .newGameBtn {
@@ -133,7 +134,7 @@ body {
       }
     }
   }
-  
+
   .winner {
     padding: 2rem;
     width: 80%;
@@ -174,7 +175,6 @@ body {
       }
     }
   }
-  
 }
 
 // Media Queries

@@ -7,6 +7,7 @@ let lastNumbers = document.querySelector(".lastNumbers");
 let newGameBtn = document.querySelector(".newGameBtn");
 let newWinnerGame = document.querySelector(".newWinnerGame");
 let winnerBtn = document.querySelector(".winnerBtn");
+let newGameTitle=document.querySelector(".newGameTitle")
 let arr = [];
 let account = 5;
 function writeHistory() {
@@ -30,7 +31,7 @@ function getWrite(e) {
     setTimeout(() => {
       newWinnerGame.classList.remove("nonActive");
       newWinnerGame.classList.add("winner");
-    }, 1000);
+    }, 2000);
   }
   if (inputValue > random || (inputValue < random && inputValue)) {
     account--;
@@ -57,9 +58,11 @@ function getWrite(e) {
     answer.innerHTML = "Təəssüf edirəm. Siz Uduzdunuz :(";
     arr = [];
     setTimeout(() => {
+      newGameTitle.innerHTML=`Məğlub oldunuz. Mənim tutduğum ədəd: ${random}`
+      newGameTitle.style.color="red"
       newGameSection.classList.remove("nonActive");
       newGameSection.classList.add("newGame");
-    }, 1000);
+    }, 2000);
   }
 }
 newGameBtn.addEventListener("click", newGame);
