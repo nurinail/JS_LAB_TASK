@@ -59,7 +59,6 @@ function getWrite(e) {
     arr = [];
     setTimeout(() => {
       newGameTitle.innerHTML=`Məğlub oldunuz. Mənim tutduğum ədəd: ${random}`
-      newGameTitle.style.color="red"
       newGameSection.classList.remove("nonActive");
       newGameSection.classList.add("newGame");
     }, 2000);

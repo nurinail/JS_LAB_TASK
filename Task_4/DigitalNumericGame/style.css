@@ -102,6 +102,7 @@ body {
   color: rgb(0, 255, 0);
 }
 .main .newGame .newGameTitle {
+  color: red;
   font-size: 5rem;
 }
 .main .newGame .newGameBtn {
