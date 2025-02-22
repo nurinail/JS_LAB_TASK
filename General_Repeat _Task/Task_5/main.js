@@ -4,7 +4,7 @@ let warning = document.querySelector(".warning");
 let parentElement = document.querySelector(".parent");
 
 let date = new Date();
-let todayDay = new Date().getDate();
+let todayDay = new Date().getDate(); 
 let todayMonth = new Date().getMonth() + 1;
 let todayYear = new Date().getFullYear();
 let lastDay = 0;
