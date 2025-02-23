@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/1a5bc9c570.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+      <div class="container">
+        <canvas id="weatherCanvas"></canvas>
+      <img class="logoImg" src="images/logo.svg" alt="logo" />
+
+      <div class="weatherWrappper">
+        <h2 class="weatherWrappper_degree">16°</h2> 
+        <div class="weatherWrappper_center">
+          <span class="weatherWrappper_center_city">London</span>
+          <span class="weatherWrappper_center_date"
+            >06:09-Monday, 9 Sep '25</span
+          >
+        </div>
+        <img
+          class="weatherWrappper_icon"
+          src="https://openweathermap.org/img/wn/01d.png"
+          alt=""
+        />
+      </div>
+      <div class="weatherInfo">
+        <span class="warning"></span>
+        <form class="form" action="">
+          <input
+            class="searchInput"
+            type="text"
+            placeholder="Şəhər adı..."
+          />
+          <i class="form_icon fa-solid fa-magnifying-glass"></i>
+        </form>
+        <div class="weatherInfo_details">
+          <p class="weatherInfo_details_title">Hava Təfərrüatları...</p>
+          <ul class="weatherInfo_details_list">
+            <li class="weatherInfo_details_list">
+              <h2 class="weatherInfo_details_list_title">Açıq buludlu</h2>
+            </li>
+            <li class="weatherInfo_details_listDetails">
+              <span class="weatherInfo_details_listDetails_name">Maksimum Temperatur</span>
+              <div class="weatherInfo_details_listDetails_icon">
+                <span class="weatherInfo_details_listDetails_icon_deg maxDeg"
+                  >16°</span
+                >
+                <img
+                  class="weatherInfo_details_listDetails_icon_img"
+                  src="images/temparaturMax.svg"
+                  alt="temperatur"
+                />
+              </div>
+            </li>
+            <li class="weatherInfo_details_listDetails">
+              <span class="weatherInfo_details_listDetails_name">Minimum Temperatur</span>
+              <div class="weatherInfo_details_listDetails_icon">
+                <span class="weatherInfo_details_listDetails_icon_deg minDeg"
+                  >16°</span
+                >
+                <img
+                  class="weatherInfo_details_listDetails_icon_img"
+                  src="images/temperaturMin.svg"
+                  alt="temperatur"
+                />
+              </div>
+            </li>
+            <li class="weatherInfo_details_listDetails">
+              <span class="weatherInfo_details_listDetails_name">Rütubətlik</span>
+              <div class="weatherInfo_details_listDetails_icon">
+                <span class="weatherInfo_details_listDetails_icon_deg humidity"
+                  >58%</span
+                >
+                <img
+                  class="weatherInfo_details_listDetails_icon_img"
+                  src="images/humadity.svg"
+                  alt="temperatur"
+                />
+              </div>
+            </li>
+            <li class="weatherInfo_details_listDetails">
+              <span class="weatherInfo_details_listDetails_name">Buludluluq</span>
+              <div class="weatherInfo_details_listDetails_icon">
+                <span class="weatherInfo_details_listDetails_icon_deg cloudy"
+                  >58%</span
+                >
+                <img
+                  class="weatherInfo_details_listDetails_icon_img"
+                  src="images/cloudy.svg"
+                  alt="temperatur"
+                />
+              </div>
+            </li>
+            <li class="weatherInfo_details_listDetails">
+              <span class="weatherInfo_details_listDetails_name">Külək</span>
+              <div class="weatherInfo_details_listDetails_icon">
+                <span class="weatherInfo_details_listDetails_icon_deg windy"
+                  >5km/h</span
+                >
+                <img
+                  class="weatherInfo_details_listDetails_icon_img"
+                  src="images/wind.svg" 
+                  alt="temperatur"
+                />
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
