@@ -1,0 +1,183 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playwrite+IT+Moderna:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+input {
+  border: none;
+  background-color: transparent;
+}
+
+input:focus {
+  outline: none;
+}
+
+@media screen and (max-width: 762px) {
+  .container {
+    font-family: "Lora", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 18px;
+    font-weight: 400;
+    width: 100%;
+    height: 110vh;
+    background-image: url("images/bg-weather.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+  }
+  .container .header {
+    padding: 20px;
+    height: 40%;
+    border-bottom: 10px solid #435050;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    position: relative;
+  }
+  .container .header .effect {
+    position: absolute;
+    top: 0;
+  }
+  .container .header .headerTop {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .container .header .headerTop .warning {
+    position: absolute;
+    color: red;
+    font-size: 10px;
+    bottom: -50%;
+    transform: translate(0, 10%);
+  }
+  .container .header .headerTop .headerForm {
+    position: relative;
+    width: 40%;
+    padding-bottom: 5px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.7);
+  }
+  .container .header .headerTop .headerForm .headerInput {
+    width: 100%;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 16px;
+  }
+  .container .header .headerTop .headerForm .headerInput::-moz-placeholder {
+    color: rgba(255, 255, 255, 0.7);
+  }
+  .container .header .headerTop .headerForm .headerInput::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+  }
+  .container .header .headerTop .headerForm .btn {
+    background: transparent;
+    border: none;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: translate(-40%, 20%);
+    color: white;
+  }
+  .container .header .headerForecast {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    color: #fff;
+    gap: 20px;
+  }
+  .container .header .headerForecast .degree {
+    font-size: 64px;
+    font-weight: bold;
+  }
+  .container .header .headerForecast .headerForecastCenter {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  .container .header .headerForecast .headerForecastCenter .headerForecastCenterCity {
+    font-size: 22px;
+    font-weight: 500;
+  }
+  .container .header .headerForecast .headerForecastCenter .headerForecastCenterDate {
+    font-weight: 200;
+    font-size: 14px;
+  }
+  .container .header .headerForecast .headerForecastImg {
+    width: 50px;
+    height: 50px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .container .main {
+    height: 60%;
+    width: 100%;
+    -webkit-backdrop-filter: blur(10px);
+            backdrop-filter: blur(10px);
+    display: flex;
+    flex-direction: column;
+    color: white;
+    padding-top: 50px;
+    gap: 26px;
+    padding-inline: 40px;
+  }
+  .container .main .mainTitle {
+    align-self: center;
+  }
+  .container .main .mainCenter {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 30px;
+    border-bottom: 2px solid white;
+    padding-bottom: 30px;
+  }
+  .container .main .mainCenter .mainCenterAction {
+    align-self: center;
+  }
+  .container .main .mainCenter .mainCenterUl {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 14px;
+  }
+  .container .main .mainCenter .mainCenterUl .mainCenterUlList {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 22px;
+  }
+  .container .main .mainCenter .mainCenterUl .mainCenterUlList .mainCenterUlListName {
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.7);
+  }
+  .container .main .mainCenter .mainCenterUl .mainCenterUlList .mainCenterUlListEnd {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 20px;
+  }
+  .container .main .mainCenter .mainCenterUl .mainCenterUlList .mainCenterUlListEnd .mainCenterUlListEndDeg {
+    font-weight: lighter;
+    font-size: 16px;
+  }
+  .container .main .mainCenter .mainCenterUl .mainCenterUlList .mainCenterUlListEnd .detailsIcon {
+    width: 22px;
+    height: 22px;
+  }
+}/*# sourceMappingURL=style.css.map */

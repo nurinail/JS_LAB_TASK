@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      src="https://kit.fontawesome.com/1a5bc9c570.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <div id="effectContainer" class="effect"></div>
+        <div class="headerTop">
+          <img class="headerLogo" src="images/logo.svg" alt="logo" />
+          <form class="headerForm">
+            <p class="warning"></p>
+            <input
+              class="headerInput"
+              type="text"
+              placeholder="Şəhər axtarın..."
+            />
+            <button class="btn">
+              <i class="headerFormIcon fa-solid fa-magnifying-glass"></i>
+            </button>
+          </form>
+        </div>
+        <div class="headerForecast">
+          <span class="degree">16°</span>
+          <div class="headerForecastCenter">
+            <p class="headerForecastCenterCity">Bakı</p>
+            <span class="headerForecastCenterDate"> Monday, 9 sep '25</span>
+          </div>
+          <img
+            class="headerForecastImg"
+            src="images/Cloudy.png"
+            alt="weatherIcon"
+          />
+        </div>
+      </header>
+      <main class="main">
+        <p class="mainTitle">Hava Məlumatı...</p>
+        <div class="mainCenter">
+          <h2 class="mainCenterAction">Qapali buludlu</h2>
+          <ul class="mainCenterUl">
+            <li class="mainCenterUlList">
+              <p class="mainCenterUlListName">Maksimum temperatur</p>
+              <div class="mainCenterUlListEnd">
+                <span class="mainCenterUlListEndDeg maxDeg">19°</span>
+                <img class="detailsIcon" src="images/maxDeg.svg" alt="deg" />
+              </div>
+            </li>
+            <li class="mainCenterUlList">
+              <p class="mainCenterUlListName">Minimum temperatur</p>
+              <div class="mainCenterUlListEnd">
+                <span class="mainCenterUlListEndDeg minDeg">19°</span>
+                <img class="detailsIcon" src="images/minDeg.svg" alt="deg" />
+              </div>
+            </li>
+            <li class="mainCenterUlList">
+              <p class="mainCenterUlListName">Rütubətlik</p>
+              <div class="mainCenterUlListEnd">
+                <span class="mainCenterUlListEndDeg humadityPer">19%</span>
+                <img class="detailsIcon" src="images/humadity.svg" alt="deg" />
+              </div>
+            </li>
+            <li class="mainCenterUlList">
+              <p class="mainCenterUlListName">Buludluluq</p>
+              <div class="mainCenterUlListEnd">
+                <span class="mainCenterUlListEndDeg cloudyPer">19%</span>
+                <img class="detailsIcon" src="images/cloudy.svg" alt="deg" />
+              </div>
+            </li>
+            <li class="mainCenterUlList">
+              <p class="mainCenterUlListName">Külək</p>
+              <div class="mainCenterUlListEnd">
+                <span class="mainCenterUlListEndDeg windSpeed">19 km/s</span>
+                <img class="detailsIcon" src="images/wind.svg" alt="deg" />
+              </div>
+            </li>
+          </ul>
+        </div>
+      </main>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
