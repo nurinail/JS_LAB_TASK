@@ -13,6 +13,7 @@ let sort19Btn=document.querySelector(".sort19Btn");
 let sort91Btn=document.querySelector(".sort91Btn");
 let allData = [];
 getData("");
+
 allPrBtn.addEventListener("click", () => {getData("");});
 electronicsBtn.addEventListener("click", () => {getData("category/electronics");});
 jewelleryBtn.addEventListener("click", () => {getData("category/jewelery");});

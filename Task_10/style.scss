@@ -215,6 +215,7 @@ button {
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
         gap: 40px;
         .main_products_wrapper_item {
+          padding: 20px;
           transition: 0.7s ease-in;
           box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
             rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
